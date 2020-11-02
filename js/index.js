@@ -13,6 +13,7 @@ httpVueLoader.langProcessor.scss = function (scssText) {
   });
 };
 
+//configuration de babel, encore une fois pas besoin d'y toucher, c'est un copié collé tel quel
 httpVueLoader.langProcessor["text/babel"] = function (script) {
   return Babel.transform(script, {
     moduleId: this.name,
@@ -21,9 +22,10 @@ httpVueLoader.langProcessor["text/babel"] = function (script) {
   }).code;
 };
 
+//same thing here lmao
 httpVueLoader.scriptExportsHandler = function (script) {
-    return this.component.script.module.exports.default;
-  };
+  return this.component.script.module.exports.default;
+};
 
 //initialisation de vue. la seule chose nécéssaire pour que vue fonctionne !
 new Vue({
@@ -31,7 +33,7 @@ new Vue({
   // il faut que je dise quels composant j'utilise dans ma page et leur url
   components: {
     "mon-header": httpVueLoader("/js/components/MonHeader.vue"),
-    contenu: httpVueLoader("/js/components/Contenu.vue"),
+    "contenu": httpVueLoader("/js/components/Contenu.vue"),
     "mon-footer": httpVueLoader("/js/components/MonFooter.vue"),
   },
 });

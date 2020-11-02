@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple utilisation vue</title>
+
+    <!-- on link les scripts qu'on a besoin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="/dist/sass.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- j'utilise mes composants comme des éléments html -->
+        <mon-header></mon-header>
+        <contenu></contenu>
+        <mon-footer></mon-footer>
+    </div>
+
+
+    <!-- a la place d'etre ici, ca peut etre dans un fichier js a part, c'est vous qui décidez -->
+    <script type="module" src="/js/index.js">
+      
+    </script>
+</body>
+
+</html>

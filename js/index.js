@@ -20,6 +20,7 @@ new Vue({
   components: {
     "mon-header": httpVueLoader("/js/components/MonHeader.vue"),
     "contenu": httpVueLoader("/js/components/Contenu.vue"),
+    "boucle" : httpVueLoader("/js/components/Boucle.vue"),
     "mon-footer": httpVueLoader("/js/components/MonFooter.vue"),
   },
 });

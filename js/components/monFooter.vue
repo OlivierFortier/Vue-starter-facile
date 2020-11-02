@@ -4,8 +4,8 @@
   </footer>
 </template>
 
-<script lang="text/babel">
-export default {
+<script>
+module.exports = {
      // nom du composant qui sera utilisé dans le html
     name: "mon-footer",
 //a l'intérieur du tag de script vous pouvez écrire du javascript normal, faire des calculs

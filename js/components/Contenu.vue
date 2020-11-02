@@ -10,8 +10,8 @@
   </div>
 </template>
 
-<script lang="text/babel">
-export default {
+<script>
+module.exports = {
   // je déclare le nom du composant
 name : "contenu",
 

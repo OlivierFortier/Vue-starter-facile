@@ -11,8 +11,8 @@
   </nav>
 </template>
 
-<script lang="text/babel">
-export default {
+<script>
+module.exports = {
     // nom du composant qui sera utilisé dans le html
     name : "mon-header",
     //si on veut des variables dynamiques, on les mets dans le return du data comme ici

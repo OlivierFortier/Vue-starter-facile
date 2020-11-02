@@ -9,8 +9,8 @@
   </div>
 </template>
 
-<script lang="text/babel">
-export default {
+<script>
+module.exports = {
   // le nom du composant qui sera utilisé dans le html
     name : "carte"
 }
